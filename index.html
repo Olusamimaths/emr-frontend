@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EMR</title>
+    <meta name="description" content="EMR" />
+    <meta name="keywords" content="emr, design" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .work-sans {
+        font-family: 'Rubik', sans-serif;
+      }
+
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+
+      .hover\:grow {
+        transition: all 0.3s;
+        transform: scale(1);
+      }
+
+      .hover\:grow:hover {
+        transform: scale(1.02);
+      }
+
+      .light-blue {
+        background-color: #daf5fa;
+      }
+      .sky-blue {
+        background-color: #0077b6;
+      }
+    </style>
+  </head>
+  <div class="light-blue bg-blue-100 border-b p-4 m-0 flex place-content-end">
+    <div class="mr-9 flex">
+      <img src="./images/ic_mail_outline_48px.svg" />
+      <p class="ml-2 text-right">healthvaultsafe@gmail.com</p>
+    </div>
+    <div class="mr-10 flex">
+      <img src="./images/ic_call_48px.svg" />
+      <p class="ml-2 text-right">+234 709 884 7809</p>
+    </div>
+  </div>
+  <body
+    class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal"
+  >
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 py-1">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
+      >
+        <div class="order-1 md:order-2">
+          <a
+            class="flex items-center no-underline hover:no-underline font-bold text-gray-800 text-xl"
+            href="#"
+          >
+            <img src="./images/logo.svg" class="w-15 m-0" />
+            <p class="ml-2">Health Vault</p>
+          </a>
+        </div>
+
+        <div
+          class="flex-2 order-2 md:order-3 flex items-center justify-evenly"
+          id="nav-content"
+        >
+          <a class="mr-8 inline-block no-underline hover:text-black" href="#">
+            About
+          </a>
+
+          <a
+            class="mr-8 pl-3 inline-block no-underline hover:text-black"
+            href="#"
+          >
+            Services
+          </a>
+
+          <a
+            class="mr-8 pl-3 inline-block no-underline hover:text-black"
+            href="#"
+          >
+            Home
+          </a>
+
+          <a
+            class="mr-8 pl-3 inline-block no-underline hover:text-black"
+            href="#"
+          >
+            Products
+          </a>
+
+          <a
+            class="mr-8 pl-3 inline-block no-underline hover:text-black"
+            href="#"
+          >
+            Contacts
+          </a>
+
+          <a
+            class="mr-8 pl-3 inline-block no-underline hover:text-black"
+            style="color: #0077b6"
+            href="#"
+          >
+            Patients Portal
+          </a>
+
+          <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+            <button
+              type="button"
+              class="text-white sky-blue hover:bg-sky-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Login
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right"
+      style="
+        max-width: 1600px;
+        height: 40rem;
+        background-image: url('./images/doctor_bg.png');
+      "
+    >
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col w-full  justify-center items-center px-6 tracking-wide"
+        >
+          <h1 class="text-white text-5xl font-extrabold my-4">
+            FAST ACCESS, FASTER TREATMENT
+          </h1>
+            <p class="leading-normal text-white text-base mb-8">
+                Access your patients record anywhere you are for fast effective diagnosis and treatment
+            </p>
+          <div class="flex">
+            <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+            <button
+              type="button"
+              class="text-white sky-blue hover:bg-sky-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-9 py-3.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Request Demo
+            </button>
+          </a>
+          <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+            <button
+              type="button"
+              class="text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-9 py-3.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" style="background-color: #A2E5F2; color: #fff"
+            >
+              Learn More
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-8">
+      <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+        <div id="store" class="w-full z-30 top-0 px-6 py-1">
+          <div
+            class="w-full container mx-auto flex flex-wrap items-center justify-center mt-0 px-2 py-3"
+          >
+            <h1 class="text-4xl">Find the Perfect Custom Solution for You</h1>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/man_coins.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Billers</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/woman_doctor.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Practictioners</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/schools.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Practice Managers</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+          <a href="#">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/practice_manager.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Schools</p>
+            </div>
+            </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+        <div id="" class="w-full z-30 top-0 px-6 py-1">
+          <div
+            class="w-full container mx-auto flex flex-wrap items-center justify-center mt-0 px-2 py-3"
+          >
+            <h1 class="text-4xl">One Software For Every Possible Solution</h1>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/man_coins.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Billers</p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/woman_doctor.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Practictioners</p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/schools.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Practice Managers</p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+            <img
+              class="hover:grow hover:shadow-lg"
+              src="images/practice_manager.png"
+            />
+            <div class="pt-3 flex items-center justify-between">
+              <p class="font-bold">Schools</p>
+            </div>
+        </div>
+      
+    </div>
+    </section>
+
+    
+  </body>
+  
+</html>
