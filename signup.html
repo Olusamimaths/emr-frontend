@@ -19,7 +19,7 @@
         <div class="flex flex-col md:flex-row">
           <div class="h-32 md:h-auto md:w-1/2">
             <img
-              class="object-cover  w-full h-full"
+              class="object-contain w-full h-full"
               src="images/signup_bg.svg"
               alt="img"
             />
@@ -63,7 +63,11 @@
               </div>
               <div class="mb-5">
                 <label class="block text-sm mb-4"> Sex </label>
-                <select name="cars" id="cars" class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600">
+                <select
+                  name="cars"
+                  id="cars"
+                  class="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                >
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                   <option value="other">Others</option>
@@ -78,7 +82,21 @@
                 />
               </div>
 
-               <!-- <div class="mb-5 flex">
+              <div class="flex items-center mb-4">
+                <input
+                  id="default-checkbox"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="default-checkbox"
+                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >I agree with EMR's <strong style="color: #0077b6">Terms, Privacy Policy </strong>and <strong style="color: #0077b6">E-Sign Consent</strong>.</label
+                >
+              </div>
+
+              <!-- <div class="mb-5 flex">
                 <input
                   class="text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                   placeholder=""
